@@ -1,0 +1,383 @@
+body {
+  font-family: "Open Sans";
+  font-style: normal;
+}
+.mobile {
+  display: none;
+}
+
+/* Styles for container */
+.container {
+  background-image: url("./images/BG\ IMAGE.png");
+  background-size: cover;
+  padding-top: 56.25%;
+  max-width: 100vw !important;
+  position: relative;
+}
+
+/* Styles for navbar */
+.navbar {
+  background-color: #16171a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.navbar-brand {
+  margin-right: auto; /* add margin-right auto to align brand to right */
+}
+
+.navbar-brand img {
+  max-width: 100%; /* add max-width to make the image responsive */
+}
+
+.navbar a,
+.navbar img {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2vw;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+.navbar a:hover {
+  color: #aa69d1;
+}
+.active {
+  color: #aa69d1 !important;
+}
+.navbar .bi-arrow-up-right {
+  color: #aa69d1 !important;
+  font-size: 0.7vw;
+  vertical-align: text-top;
+}
+.bi-arrow-up-right {
+  color: white;
+  font-size: 0.4vw;
+  vertical-align: super;
+}
+.info-container {
+  position: absolute;
+  left: 65%;
+  top: 65%;
+  transform: translateY(-50%);
+  flex-wrap: wrap;
+  width: 25%;
+}
+.info {
+  color: white;
+  float: right;
+}
+.info h1 {
+  font-size: 4vw;
+  font-weight: 700;
+}
+.info p {
+  font-size: 1vw;
+}
+.rhomboid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rhomboid button {
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  transform: skew(-20deg);
+  white-space: nowrap;
+}
+
+.rhomboid button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.rhomboid button:active {
+  transform: skew(-20deg) scale(0.9);
+}
+
+.rhomboid button:focus {
+  outline: none;
+}
+
+.rhomboid button span {
+  display: inline-block;
+  transform: skew(20deg);
+}
+.whatsnewcontainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 15vh;
+}
+
+.image-container {
+  position: relative;
+  margin-left: 18%;
+}
+
+.image-container img {
+  width: 50vw;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.text-overlay h1 {
+  font-size: 3vw;
+}
+
+.explore {
+  margin-left: 4vw !important;
+}
+.row {
+  justify-content: center;
+}
+.card-col {
+  width: 30% !important;
+}
+.card {
+  padding: 15px;
+  border-radius: 1.5rem !important;
+  background-color: #2e1f37 !important;
+}
+.card img {
+  border-radius: 1rem;
+}
+.card-body {
+  color: white;
+}
+.card:hover .overlay {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.card:hover .btn {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.findMore {
+  position: absolute;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  top: 45%;
+  transform: translate(-50%, -50%) skew(-20deg) !important;
+}
+.aboutUsContainer {
+  background-image: url("./images/BG\ IMAGE1.png");
+  background-size: cover;
+  padding-top: 50%;
+  max-width: 100vw !important;
+  position: relative;
+}
+.aboutUs-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 15%;
+  top: 48%;
+  transform: translateY(-50%);
+  flex-wrap: wrap;
+  width: 25%;
+}
+.aboutUs {
+  color: white;
+  float: right;
+}
+.aboutUs h1 {
+  font-size: 3.5vw;
+  font-weight: 600;
+}
+.aboutUs p {
+  font-size: 1vw;
+}
+.aboutButton {
+  justify-content: left;
+}
+.card-bscol {
+  width: 20% !important;
+}
+.whyUscontainer {
+  background-image: url("./images/Picture8.png");
+  background-size: cover;
+  padding-top: 50%;
+  max-width: 100vw !important;
+  position: relative;
+}
+.whyUs-container {
+  position: absolute;
+  left: 60%;
+  top: 48%;
+  transform: translateY(-50%);
+  flex-wrap: wrap;
+  width: 25%;
+}
+.whyUs {
+  color: white;
+  float: right;
+}
+.whyUs h1 {
+  font-size: 3.5vw;
+  font-weight: 600;
+}
+.whyUs p {
+  font-size: 1vw;
+}
+.whyButton {
+  justify-content: left;
+}
+.footercontainer {
+  background-image: url("./images/Picture10.png");
+  background-size: cover;
+  padding-top: 10%;
+  max-width: 100vw !important;
+  position: relative;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+  top: 48%;
+  transform: translateY(-50%);
+}
+
+.footer {
+  flex-basis: 22%;
+  margin-bottom: 2%;
+  display: inline-block;
+}
+.footer h5 {
+  display: block;
+  color: white;
+}
+.footer p {
+  font-size: 0.9vw;
+  color: #9a60be;
+  display: inline-block;
+}
+.footerimg img {
+  float: left;
+}
+.logo p {
+  color: white;
+}
+
+/* Add media query for smaller screens */
+@media only screen and (max-width: 767px) {
+  .web {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .container-fluid {
+    display: flex !important;
+    justify-content: space-around !important;
+  }
+  .container-fluid i {
+    color: white;
+    font-size: 3vw;
+  }
+  .midpart {
+    color: white;
+    text-align: center;
+  }
+  .midpart h1 {
+    font-size: 10vw;
+  }
+  .midpart p {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .mfindMore {
+    flex-direction: column;
+  }
+  .mfindMore .btn {
+    width: 50vw;
+  }
+  .mfindMore .btn span {
+    font-size: 2.5vw;
+  }
+  .bi-arrow-up-right {
+    font-size: 1.5vw;
+  }
+  #MagicCarousel .carousel-item {
+    width: 80%;
+    margin: auto;
+  }
+
+  #MagicCarousel .carousel-caption {
+    text-align: center;
+  }
+
+  #MagicCarousel .carousel-caption h1 {
+    font-size: 3rem;
+  }
+
+  #MagicCarousel .carousel-caption h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+
+  #MagicCarousel img {
+    width: 100%;
+    height: auto;
+  }
+  .card-title {
+    text-align: center;
+  }
+  /* Custom CSS */
+  .mcard {
+    height: 50vh;
+    width: 50vw;
+    left: 15vw;
+  }
+
+  .mcard-img-top {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+  }
+  .mcard img {
+    height: 100% !important;
+  }
+  .footer {
+    width: 35vw;
+  }
+  .footer p {
+    font-size: 2vw;
+    padding: 0px;
+  } 
+}
